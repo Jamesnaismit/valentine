@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #body{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background: url(bg.avif);
+    background-color: black;
+    color: rgb(255, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-style: oblique;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center; 
+  }
+  
+  .form{
+    display: block;
+    margin-top: 200px;
+    backdrop-filter: blur(15px);
+    width: 100px;
+    height: 100px;
+    align-content: center;
+    border-radius: 20px;
+    transition: 2s ease-in-out;
+  }
+  
+  .form2{
+    display: block;
+    margin-top: 200px;
+    backdrop-filter: blur(3500px);
+    width: 500px;
+    align-content: center;
+    border-radius: 20px;
+    transition: 2s ease-in-out;
+  }
+  
+  .form:hover{
+    transform: translateY(-10px);
+    transition: 1s ease-in-out;
+  }
+  
+  .agree{
+    height: 50px;
+    width: 60px;
+    margin-left: -10px;
+    border-color: greenyellow;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 40px;
+    transition: 1s ease-in-out;
+  }
+  
+  .reject{
+    height: 50px;
+    width: 60px;
+    margin-left: 100px;
+    border-color: red;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 40px;
+    transition: 1s ease-in-out;
+  }
+  
+  .agree:hover,
+  .reject:hover{
+    transform: translateY(-10px);
+    transition: 1s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .video{
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .video2{
+    width: 1543px;
+    height: 643px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .me{
+    font-weight: bold;
+    font-size: 6vh;
+  }
+  
+  .change{
+    height: 50px;
+    width: 60px;
+    margin-left: -10px;
+    color: white;
+    border: none;
+    background: pink;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 40px;
+    transition: 1s ease-in-out;
+  }
+  
+  .same{
+    height: 50px;
+    width: 60px;
+    margin-left: -10px;
+    color: white;
+    border: none;
+    background: pink;
+    border-radius: 20px;
+    outline: none;
+    margin-top: -10px;
+    transition: 1s ease-in-out;
+    margin-left: 10px;
+  }
+  
+  .change:hover,
+  .same:hover{
+    transform: translateY(-10px);
+    transition: 1s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* ========================= */
+  /* RESPONSIVE ADDITIONS ONLY */
+  /* ========================= */
+  
+  /* Tablets */
+  @media (max-width: 1024px){
+    .form,
+    .form2{
+      margin-top: 150px;
+    }
+  
+    .me{
+      font-size: 5vh;
+    }
+  }
+  
+  /* Phones */
+  @media (max-width: 768px){
+    .form{
+      width: 80px;
+      height: 80px;
+      margin-top: 120px;
+    }
+  
+    .form2{
+      width: 90%;
+      margin-top: 120px;
+    }
+  
+    .agree,
+    .reject,
+    .change,
+    .same{
+      margin-left: 0;
+      margin: 15px 10px;
+    }
+  
+    .me{
+      font-size: 4vh;
+    }
+  
+    .video{
+      height: 90px;
+    }
+  }
+  
+  /* Small phones */
+  @media (max-width: 480px){
+    .form{
+      width: 70px;
+      height: 70px;
+    }
+  
+    .me{
+      font-size: 3.5vh;
+    }
+  
+    .video{
+      height: 80px;
+    }
+  }
+  

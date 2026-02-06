@@ -1,0 +1,31 @@
+body{
+    background: url(monkey.jpeg);
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.video{
+    height: 200px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px){
+    .video{
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px){
+    .video{
+        height: 120px;
+    }
+}
+@media (max-width: 480px){
+    .video{
+        height: 100px;
+    }
+}
